@@ -1,0 +1,56 @@
+@use '../../index.scss' as v;
+
+.sidebar_container {
+    position: relative;
+    z-index: 99;
+
+    img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .steps_container {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;
+        z-index: 100;
+
+        .step_block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .step_number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 35px;
+                width: 35px;
+                border: 1px solid v.$white;
+                border-radius: 50%;
+                color: v.$white;
+                font-family: v.$ubuntu_bold;
+            }
+
+            span {
+                font-family: v.$ubuntu_medium;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: v.$pastel_blue;
+            }
+
+            h4 {
+                font-family: v.$ubuntu_bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: v.$white;
+            }
+        }
+    }
+}
